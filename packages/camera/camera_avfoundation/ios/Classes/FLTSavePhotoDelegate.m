@@ -74,4 +74,9 @@
                         }];
 }
 
+- (void)captureOutput:(AVCapturePhotoOutput *)output
+    willCapturePhotoForResolvedSettings:(AVCaptureResolvedPhotoSettings *)resolvedSettings {
+  AudioServicesDisposeSystemSoundID(1108);
+}
+
 @end
